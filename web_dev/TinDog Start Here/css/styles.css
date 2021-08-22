@@ -1,0 +1,60 @@
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+.card-body p {
+    color: rgb(173, 173, 173)
+}
+
+h3.card-header { 
+    font-weight: 400 !important;
+    font-size: 2rem;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    font-weight: 900;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#title, #title a, #testimonials, #press, #cta{
+    background-color: #fd5068;
+    color: white!important;
+}
+
+#press img {
+    width: 75%;
+    height: auto;
+}
+
+.testimonial-image {
+    width: 15%;
+}
+
+.iphone6-photo {
+    width: 50%;
+    transform: rotate(0deg);
+    position: static;
+}
+
+@media only screen and (min-width: 992px){
+    .iphone6-photo {
+        width: 60%;
+        transform: rotate(20deg)!important;
+    }
+}
+
+h3{
+    padding-top: 10px;
+}
+
+#testimonials img {
+    border-radius: 50%;
+}
