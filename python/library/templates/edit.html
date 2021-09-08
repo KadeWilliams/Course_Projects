@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+</head>
+
+<body>
+    <h1>Book Name:{{ book_to_edit.title}}</h1>
+
+    <p>Current Rating {{book_to_edit.rating}}</p>
+
+    <!-- Get the id of the book we want to edit from the edit function -->
+    <form novalidate action="{{ url_for('edit', id=book_to_edit.id)}}" method="POST">
+        <label>Rating</label>
+        <input type="number" name='rating'>
+
+        <button type="submit">Update Rating</button>
+    </form>
+</body>
+
+</html>

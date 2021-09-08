@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Book</title>
+</head>
+
+<body>
+    <form novalidate action="{{ url_for('add')}}" method="POST">
+
+        <label>Title</label>
+        <input type="text" name='title'>
+
+        <label>Author</label>
+        <input type="text" name='author'>
+
+        <label>Rating</label>
+        <input type="number" name='rating'>
+
+        <button type="submit">Add Book</button>
+    </form>
+
+    <!-- Just a simple redirect to home -->
+    <a href="{{ url_for('home') }}">View Library</a>
+</body>
+
+</html>

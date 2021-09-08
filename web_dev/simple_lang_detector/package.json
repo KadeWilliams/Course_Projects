@@ -1,0 +1,18 @@
+{
+  "name": "simple_lang_detector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "franc": "^6.0.0",
+    "langs": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kade Williams",
+  "license": "ISC"
+}

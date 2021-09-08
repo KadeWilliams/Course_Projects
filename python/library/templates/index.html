@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+</head>
+
+<body>
+    <h1>My Library</h1>
+    {% if all_books|length > 0 %}
+    <ul>
+        {% for book in all_books %}
+        <!-- get the id from the for loop and pass it through the delete function in main.py 
+             and then pass through the id through the edit function if that request is made
+        -->
+        <li><a href='{{url_for("delete", id=book.id)}}'>Delete</a> {{ book.title }} - {{ book.author}} - {{ book.rating
+            }}/10<a href='{{ url_for("edit", id=book.id)}}'> Edit
+                rating</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>Library is empty.</p>
+    {% endif %}
+
+    <a href="{{ url_for('add') }}">Add New Book</a>
+</body>
+
+</html>
